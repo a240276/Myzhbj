@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/pic_item_list_default"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/item_pics_icon"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
+
+        <TextView
+            android:id="@+id/item_pics_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题标题标题标题标题" />
+    </LinearLayout>
+
+</LinearLayout>

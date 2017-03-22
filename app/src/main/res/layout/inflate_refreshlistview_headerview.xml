@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 下拉刷新头布局 -->
+
+    <RelativeLayout
+        android:id="@+id/refresh_headerView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                android:visibility="invisible"
+                android:id="@+id/refresh_headerview_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/refresh_headerview_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/common_listview_headview_red_arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 下拉刷新的状态 -->
+
+            <TextView
+                android:id="@+id/refresh_headerview_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="#f00"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/refresh_headerview_updatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="刷新时间:2015年12月1日1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 自定义头布局的容器 -->
+
+    <FrameLayout
+        android:id="@+id/refresh_headerview_customheaderview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

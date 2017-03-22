@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- ViewPager -->
+
+    <com.huasuan.myzhbj.views.NoScrollViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.huasuan.myzhbj.views.NoScrollViewPager>
+
+    <!-- RatioGroup -->
+
+    <RadioGroup
+        android:id="@+id/content_rg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/content_rb_home"
+            style="@style/content_rb_style"
+            android:drawableTop="@drawable/selector_rb_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/content_rb_newscenter"
+            style="@style/content_rb_style"
+            android:drawableTop="@drawable/selector_rb_newscenter"
+            android:text="新闻中心" />
+
+        <RadioButton
+            android:id="@+id/content_rb_smartservice"
+            style="@style/content_rb_style"
+            android:drawableTop="@drawable/selector_rb_smartservice"
+            android:text="智慧服务" />
+
+        <RadioButton
+            android:id="@+id/content_rb_govaffair"
+            style="@style/content_rb_style"
+            android:drawableTop="@drawable/selector_rb_govaffair"
+            android:text="政务" />
+
+        <RadioButton
+            android:id="@+id/content_rb_setting"
+            style="@style/content_rb_style"
+            android:drawableTop="@drawable/selector_rb_setting"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>

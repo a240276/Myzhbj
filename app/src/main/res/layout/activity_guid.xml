@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuidActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guid_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 按钮 -->
+
+    <Button
+        android:id="@+id/guid_btn_start"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_btn_guid"
+        android:text="点击开始"
+        android:textColor="@color/selector_btn_guid_text"
+        android:textSize="20sp" />
+
+    <!-- indicator -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" >
+
+        <LinearLayout
+            android:id="@+id/guid_indicator_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_focus" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dot_focus" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                 android:layout_marginLeft="10dp"
+                android:background="@drawable/dot_focus" />
+            -->
+        </LinearLayout>
+
+        <!-- 当前选中的点 -->
+        <!-- android:layout_marginLeft="20dp"可以控制点的移动 -->
+
+        <ImageView
+            android:id="@+id/guid_iv_selected_indicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/dot_focus" />
+    </RelativeLayout>
+
+</RelativeLayout>

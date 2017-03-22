@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <com.huasuan.myzhbj.views.InnerViewPager
+            android:id="@+id/newslist_page_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.huasuan.myzhbj.views.InnerViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:background="#30000000">
+
+            <TextView
+                android:id="@+id/newslist_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:text="标题"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/newslist_page_indicator_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
